@@ -1,0 +1,330 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.header {
+    background-image: url(../images/banner\ image.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 4%;
+    align-items: center;
+}
+
+nav img {
+    width: 250px;
+    height: 50px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+.textbox {
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+
+
+}
+
+.textbox h1 {
+    font-size: 62px;
+    padding: 8px 34px;
+    color: #f44336;
+
+}
+
+.textbox p {
+    margin: 8px 0 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 10px 34px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(4, 4, 4);
+    padding: 12px 34px;
+    margin-left: 35px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hero-btn:hover {
+    border: 1px solid #f33446;
+    background: #f33446;
+    color: #fff;
+    transition: 1s;
+}
+
+.nav-icons {
+    background-color: transparent;
+    padding: 10px;
+    /* border:2px solid rgb(68, 62, 62); */
+    transition: 0.5s;
+}
+
+#icons {
+    padding: 8px 12px;
+
+}
+
+.nav-icons:hover {
+    /* background-color:aqua; */
+    padding: 10px;
+    /* border:2px solid rgb(191, 147, 147); */
+}
+
+#icons:hover {
+    color: #fff;
+    background-color: rgb(141, 164, 164);
+}
+
+/* new section */
+.cards-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+
+.cards {
+    width: 380px;
+    min-height: 459px;
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid rgb(196, 192, 192);
+    box-shadow: 2px 2px 10px black;
+
+
+}
+
+.image img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    color: #DFBA35;
+}
+
+.description {
+    text-align: center;
+    padding: 10px;
+}
+
+.button {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.hero-btn1 {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(4, 4, 4);
+    padding: 12px 34px;
+    font-size: 16px;
+    background-color: black;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn1:hover {
+    border: 1px solid #f33446;
+    background: #f33446;
+    color: #fff;
+    transition: 1s;
+
+}
+
+hr {
+    width: 40%;
+    border: 1px solid #DFBA35;
+    margin-top: 20px;
+}
+
+/* another section */
+.col-md {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: block;
+}
+
+.img1 {
+    border-radius: 50%;
+    box-shadow: 0 15px 30px rgb(172, 147, 147);
+    overflow: hidden;
+    margin-top: 60px;
+    min-height: 1024px;
+
+}
+
+/* cards scrolling */
+
+.scroll-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.scroll-bar {
+    height: 1024px;
+    width: 40%;
+    border: 0 solid rgb(196, 192, 192);
+    overflow: auto;
+    margin-top: 50px;
+}
+
+.cards-1 {
+    width: 230px;
+    min-height: 200px;
+    display: inline-block;
+    margin: 60px;
+    border: 1px solid rgb(196, 192, 192);
+    box-shadow: 2px 2px 10px black;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.image-1 img {
+    width: 100%;
+    height: 170px;
+}
+
+.title-1 {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+.description-1 {
+
+    text-align: center;
+}
+
+/* discount */
+.discount {
+    border: 2px solid red;
+    text-align: center;
+    background: red;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    right: -70px;
+    width: 200px;
+
+}
+
+.discount p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* all kinds of glasses */
+.summer-h1 {
+    text-align: center;
+    font-size: 62px;
+}
+
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    height:100%;
+    margin-top:20px;
+    
+    
+}
+.ganesh{
+    height:100%;
+    margin-top:50px;
+}
+.summer-glasses{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.txt{
+    font-size: 12px;
+    text-align: left;
+    padding: 25px;
+}
+.txt-1{
+    font-size: 12px;
+    text-align: right;
+    padding:20px;
+}
+.hr1{
+    width:200px;
+   
+}
+
+@media(max-width:750px){
+    
+}
